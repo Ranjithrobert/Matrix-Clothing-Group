@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+   
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 4vmin;
+}
+a:hover{
+    border-bottom: 2px solid whitesmoke;
+    color: whitesmoke;
+}
+.navbar{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 3vmin;
+    color:#F8F8F8;
+
+}
+.log{
+    font-size: 6vmin;
+    font-weight: 900;
+}
+ul{
+    list-style: none;
+    cursor: pointer;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0px 35px;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+.menu-btn{
+    position: absolute;
+    width: 25px;
+    top: 25px;
+    right: 30px;
+    display: none;
+    cursor: pointer;
+
+}
+/*--------------------------------*/
+header{
+    background-image: url(./image/m6.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.header-component{
+    margin-bottom: 160px;
+    text-align: center; 
+}
+.line{
+    width: 150px;
+    height: 6px;
+    background-color:rgb(255, 0, 98);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-component h1{
+    font-size: 4vmin;
+    color: whitesmoke;
+    font-weight: 700;
+
+}
+.header-component h2{
+    font-size: 6vmin;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-weight: 700;
+} 
+
+/*------------*/
+#About img{
+    width: 100%;
+    height:880px;
+    margin-left: 10px;
+    margin-top: 14px;
+    border-radius: 6px;
+}
+#About h2{
+    text-align: center;
+    margin-top: 25px;
+}
+#About p{
+    font-size: 17px;
+}
+/*----------*/
+#Clients{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/m3.jpg);
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    margin-top: 5px;
+}
+.contection{
+    width: 50%;
+    padding: 70px;
+    color: whitesmoke;
+    flex-direction: column;
+    
+}
+#Clients h4{
+    font-weight: 400;
+    margin:6px 100px
+
+}
+#Clients h2{
+    font-weight: 700;
+    margin:6px 100px
+
+}
+/*----*/
+#NetWork{
+    background-color:#F8F8F8;
+    color: black;
+}
+#NetWork h2{
+    font-size: 6vmin;
+    
+}
+#NetWork h4{
+    margin-bottom: 10px;
+    
+}
+#NetWork p{
+    font-size: 18px;
+}
+
+.linee{
+    width: 20px;
+    height: 5px;
+    background-color: #2b07f1;
+}
+#NetWork a{
+    color:#2913B4;
+}
+#NetWork a:hover{
+    border-bottom: 1px solid #2913B4;
+}
+.footer{
+    background-color: #F8F8F8;
+    padding: 20px 20px;
+    width: 100%;
+}
+.lineee{
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.footer a{
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.footer a:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.651);
+}
+.footer i{
+    font-size: 20px;
+    margin-left: 50px;
+
+    
+    
+}
+
+@media only screen and (max-width:1280px) {
+    #About img{
+        width: 100%;
+        height:929px;
+        margin-left: 10px;
+        margin-top: 14px;
+        border-radius: 6px;
+    }
+    #Clients h4{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    #About img{
+        width: 100%;
+        height:940px;
+        margin-left: 10px;
+        margin-top: 14px;
+        border-radius: 6px;
+    }
+    #Clients h4{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:800px) {
+    #About img{
+        width: 100%;
+        height:1140px;
+        margin-left: 10px;
+        margin-top: 14px;
+        border-radius: 6px;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    .menu-btn {
+        display: block;
+        color: whitesmoke;
+    }
+    a{
+        color: whitesmoke;
+    }
+    a:hover{
+        border-bottom: 2px solid black;
+    }
+
+    .navbar {
+        padding: 0;
+        transition:   all 0.9s ease;
+    }
+
+    .log {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-weight: 900;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: skyblue;
+        margin-left:-900px;
+        transition:   all 0.9s ease;
+
+    }
+    .mobile-menu {
+        margin-left: 0px;
+    }
+
+    .nav-link li {
+        margin: 50px auto;
+    }
+    #Clients h4{
+        font-size: 20px;
+    }
+    
+}
+@media only screen and (max-width:480px) {
+    #About img{
+        width: 100%;
+        height: 400px;
+    }
+}
+@media only screen and (max-width:320px) {
+    #About img{
+        width: 100%;
+        height: 300px;
+    }
+    #Clients h2{
+        margin: 20px 10px;
+    }
+    #Clients h4{
+        margin: 5px 10px;
+    }
+    #NetWork h2{
+        padding: 10px;
+        font-size: 30px;
+    }
+}
+
